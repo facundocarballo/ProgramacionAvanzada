@@ -8,11 +8,7 @@ Con respecto a codigo puro, solo nos dieron solo una simple tarea, y fue realiza
 
 Dado un vector de enteros, imprimirlo de tal forma para que salga por pantalla
 
-1	2	3	4	5
-12	23	34	45
-123	234	345
-1234	2345
-12345
+![Resultado final.](https://i.ibb.co/gZxFhdm/12345.png "Resultado Final")
 
 (En este caso el vector seria int[] array = {1,2,3,4,5})
 
