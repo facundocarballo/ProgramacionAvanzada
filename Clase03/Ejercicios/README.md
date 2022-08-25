@@ -1,0 +1,1 @@
+Estos ejercicios son para realizar pruebas de software concretas y empezar a pensar en los posibles casos donde nuestro software pueda fallar.
