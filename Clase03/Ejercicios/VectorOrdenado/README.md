@@ -1,0 +1,1 @@
+Nos dejaron de tarea hacer un metodo que determine si un vector esta ordenado o no, y si esta ordenado que diga de que forma esta ordenado.
