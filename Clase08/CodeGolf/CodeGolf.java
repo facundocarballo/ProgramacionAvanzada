@@ -1,36 +1,28 @@
+import java.util.HashMap;
+import java.util.Map;
 
 public class CodeGolf {
 	
-	public int difFiguritas(int[] c, int[] v)
+	public int difFiguritas(int[] a, int[] b)
 	{
-		// Contar la cantidad de repetidas de cada coleccionista
-		// cantidad de figuritas - repetidas => cant. figuritas
+		Map<Integer, Integer> c = new HashMap<Integer, Integer>();
+		Map<Integer, Integer> d = new HashMap<Integer, Integer>();
 		
-		int r = 0, d = 0, i;
+		int e = 0, f = 0;
 		
-		for (i = 0; i < c.length; i++)
-		{
-			for (int j : c)
-			{
-				if (i == j)
-				{
-					r++;
-				}
-			}
-		}
+		for (int g : a)
+			if (c.get(g) != null) 
+				e++;
+			else 
+				c.put(g, 1);
 		
-		for (i = 0; i < v.length; i++)
-		{
-			for (int j : v)
-			{
-				if (i == j)
-				{
-					d++;
-				}
-			}
-		}
-		
-		return ((c.length - r) - (v.length - d));
+		for (int g : b)
+			if (d.get(g) != null)
+				f++;
+			else
+				d.put(g, 1);
+
+		return ((a.length - e) - (b.length - f));
 		
 	}
 	
