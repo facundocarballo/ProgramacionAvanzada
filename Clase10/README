@@ -1,0 +1,7 @@
+Hoy vimos complejidad computacional
+
+T = C * f(n)
+
+T => Tiempor
+C => Constante Computacional => C = Segundos/Operacion
+f(n) => n

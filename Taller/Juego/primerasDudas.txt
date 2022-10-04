@@ -1,0 +1,9 @@
+Preguntas Progra avanzada:
+	
+	- Cuando se lanza un proyectil, hay que hacer distintos metodos por ejemplo:
+		- matar()
+		- convertir()
+		- no_hacer_nada()
+	o simplemente nos fijamos si choco con algun objeto del mapa, que realice ciertas acciones
+	
+	- 
