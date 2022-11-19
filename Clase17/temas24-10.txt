@@ -1,0 +1,23 @@
+Minimum Spanning Tree
+
+Caracteristicas:
+	- Si todos las aristas tienen un peso diferente, el arbol es unico
+
+Algoritmo de Jarnik/Prim
+	Complejidad Computacional: |Nodos| * log(Aristas)
+
+Algoritmo de Boruvka:
+	Sirve para comprobar si el algoritmo de Prim/Jarnik esta bien hecho o no.
+
+Algoritmo de Kruskal:
+	Complejidad Computacional: |Aristas| * log(Aristas) 
+	1- Ordenamos las aristas por peso
+	2- Recorremos 
+
+Eleccion de algoritmo:
+	- Cuando haya mas nodos que aristas, conviene Kruskal
+	- Cuando hay mas aristas que nodos, conviene Prim/Jarnik (suele pasar esta situacion)
+
+Comparacion Prim VS Kruskal:
+	- Kruskal arranca con muchos mini arbolitos, y termina en un arbolote
+	- Prim arranca con un solo arbolito, y termina en un arbolote

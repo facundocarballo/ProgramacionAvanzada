@@ -1,0 +1,15 @@
+% factorial de un numero
+
+% 5! = 5*4*3*2*1
+
+factorial(0, 1).
+
+factorial(N,_):- 
+    N<0,
+    !,
+    fail.
+
+factorial(N, Salida):-
+    T is N-1,
+    factorial(T, S),
+    Salida is N*S.

@@ -1,0 +1,34 @@
+%clauses
+entrada(paella).
+entrada(gazpacho).
+entrada(consomé).
+carne(filete_de_cerdo).
+carne(pollo_asado).
+pescado(trucha).
+pescado(bacalao).
+postre(flan).
+postre(helado).
+postre(pastel).
+%fin clauses
+
+plato(Plato):-
+    carne(Plato);
+    pescado(Plato).
+
+menu(Entrada, Plato, Postre):-
+    entrada(Entrada),
+    plato(Plato),
+    postre(Postre).
+
+menus_con_consome(Entrada, Plato, Postre):-
+    entrada(Entrada),
+    Entrada == consomé,
+    plato(Plato),
+    postre(Postre).
+
+
+menus_sin_flan(Entrada, Plato, Postre):-
+    entrada(Entrada),
+    plato(Plato),
+    postre(Postre),
+    Postre \= flan.

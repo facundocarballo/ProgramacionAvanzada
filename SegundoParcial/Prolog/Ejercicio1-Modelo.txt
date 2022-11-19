@@ -1,0 +1,33 @@
+medicion(1, 10, 90).
+medicion(2, 999, 120300).
+medicion(3, 193, 3213).
+medicion(4, 199, 3123).
+
+
+% 1) a)
+muestras_validas(NRO_MUESTRA, VALOR_MAXIMO):-
+    medicion(NRO_MUESTRA, VALOR_MINIMO, VALOR_MAXIMO),
+    Valor is VALOR_MAXIMO-VALOR_MINIMO,
+    Valor < 10000.
+
+%1) b)
+primera_muestra(NRO_MUESTRA):-
+    muestras_validas(NRO_MUESTRA, _),
+    !.
+
+%2) c)
+producto_Cartesiano(V1, V2):-
+    muestras_validas(_, V1),
+    muestras_validas(_, V2).
+    
+    
+seleccion(X, Y):-
+    producto_Cartesiano(X, Y),
+    X < Y.
+
+proyeccion(X):-
+    seleccion(X, _).
+
+mostrar_maximo(NRO_MUESTRA):-
+    muestras_validas(NRO_MUESTRA, Valor),
+    not(proyeccion(Valor)).

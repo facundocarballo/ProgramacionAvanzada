@@ -1,0 +1,7 @@
+Hola profe, le mandor por Teams, por Miel y a su mail (videla.lucas@gmail.com) el .zip de nuestro 2do parcial.
+En este zip encontrara tanto el proyecto que nos llevamos del aula (Carballo-Coria-Original) y el proyecto que modificamos en nuestras casas (Carballo-Coria-Modificado)
+Ademas, le agregue un archivo (modificaciones.txt) donde podra ver mas detalladamente los cambios que realizamos, para llegar a la solucion esperada.
+
+Aclaracion, no nos detuvimos a tratar de solucionar los casos que inicialmente fallaron en el aula (Caso 05 y Caso 07).
+
+Saludos profe, muchas gracias

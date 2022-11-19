@@ -1,0 +1,66 @@
+%clausulas
+
+parcial1(crack, 10).
+parcial1(victor, 9).
+parcial1(facu, 5).
+parcial1(lauti, 5).
+parcial1(angel, 9).
+parcial1(yair, 2).
+parcial1(digangi, 4).
+
+parcial2(crack, 10).
+parcial2(facu, 10).
+parcial2(victor, 10).
+parcial2(angel, 10).
+parcial2(lauti, 10).
+parcial2(yair, 2).
+parcial2(andrea, 4).
+
+%fin clausulas
+
+alumno_promocionado(X):-
+    parcial1(X, NOTA_1),
+    NOTA_1 >= 7,
+    parcial2(X, NOTA_2),
+    NOTA_2 >= 7.
+
+alumno_cursado(X):-
+    parcial1(X, NOTA_1),
+    NOTA_1 >= 4,
+    parcial2(X, NOTA_2),
+    NOTA_2 >= 4,
+    (NOTA_1 < 7; NOTA_2 < 7).
+
+alumno_recursado(X):-
+    parcial1(X, NOTA_1),
+    NOTA_1 < 4,
+    parcial2(X, NOTA_2),
+    NOTA_2 < 4.
+
+
+promedio(X, PROMEDIO):-
+    parcial1(X, NOTA_1),
+    NOTA_1 >= 7,
+    parcial2(X, NOTA_2),
+    NOTA_2 >= 7,
+	SUMA_NOTAS is NOTA_2+NOTA_1,
+    PROMEDIO is SUMA_NOTAS/2.
+    
+no_medalla(X):-
+    promedio(X, PROMEDIO_X),
+    promedio(_, PROMEDIO_Y),
+    PROMEDIO_X<PROMEDIO_Y.
+
+medalla_al_merito(X):-
+	promedio(X, _),
+    not(no_medalla(X)).
+
+
+no_ausentes(X):-
+    parcial1(X, _),
+    parcial2(X, _).
+
+ausentes(X):- 
+    (parcial1(X, _);parcial2(X, _)),
+    not(no_ausentes(X)).
+

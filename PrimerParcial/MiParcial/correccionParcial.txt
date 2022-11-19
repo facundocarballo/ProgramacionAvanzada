@@ -1,0 +1,15 @@
+- Archivo -> cantCorredores. 
+	Aca hay que leer primero el entero (edad) y luego la linea completa. 
+	En esta linea obtenemos un espacio y luego el caracter que buscamos. 
+	Entoces, transformamos esta lina a un CharArray y luego obtenemos la
+	posicion 1 de ese vector que representa al caracter en cuestion
+- Categorias -> Falto inicializar el ArrayList<Corredores>
+- Cambiar el constructor de las Categorias, hay que recibir el minimo primero
+	 y despues el maximo
+- El archivo de prueba tiene solo 7 ganadores, cuando el archivo dice 8
+- El metodo imprimir ganadores tiene que sobreescribir la variable "s", sino 
+	no funciona.
+	Tambien hay que agregar la salida "0 0 0" para cuando ganadores.size() 
+	es igual a cero
+- En la funcion de escribir archivo, recorremos dos veces al femenino. 
+	Eso pasa por copiar y pegar!!! :)

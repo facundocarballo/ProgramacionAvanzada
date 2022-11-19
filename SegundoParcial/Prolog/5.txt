@@ -1,0 +1,81 @@
+%clausulas
+altura(alta).
+altura(media).
+altura(baja).
+
+color_cabello(rubio).
+color_cabello(castaño).
+color_cabello(pelirrojo).
+color_cabello(negro).
+
+edad(joven).
+edad(adulta).
+edad(vieja).
+
+musica(clasica).
+musica(pop).
+musica(jazz).
+
+literatura(aventura).
+literatura(ciencia-ficcion).
+literatura(policíaca).
+
+deporte(tenis).
+deporte(natacion).
+deporte(jogging).
+
+hombre(facundo, baja, castaño, joven).
+hombre(angel, media, castaño, joven).
+hombre(sergio, baja, castaño, adulta).
+hombre(omar, baja, castaño, vieja).
+
+mujer(andrea, baja, negro, adulta).
+mujer(lucila, baja, negro, joven).
+mujer(sofia, baja, castaño, joven).
+mujer(mirta, baja, castaño, vieja).
+
+gusta(facundo, pop, policíaca, tenis).
+gusta(angel, pop, policíaca, natacion).
+gusta(sergio, pop, policíaca, tenis).
+gusta(omar, clasica, policíaca, tenis).
+
+gusta(andrea, pop, policíaca, tenis).
+gusta(lucila, pop, policíaca, natacion).
+gusta(sofia, pop, policíaca, tenis).
+gusta(mirta, clasica, policíaca, tenis).
+
+busca(facundo, baja, castaño, joven).
+busca(angel, media, castaño, joven).
+busca(sergio, baja, castaño, adulta).
+busca(omar, baja, castaño, vieja).
+
+busca(andrea, baja, castaño, joven).
+busca(lucila, media, castaño, joven).
+busca(sofia, baja, castaño, adulta).
+busca(mirta, baja, castaño, vieja).
+
+
+%fin clausulas
+
+persona(Nombre, Altura, Color_Cabello, Edad):-
+    (
+    	hombre(Nombre, Altura, Color_Cabello, Edad);
+    	mujer(Nombre, Altura, Color_Cabello, Edad)
+    ).
+
+comparacion_de_busquedas(Altura_Buscado, Altura_Pareja, Color_Cabello_Buscado, 
+                         Color_Cabello_Pareja, Edad_Buscado, Edad_Pareja):-
+    Altura_Buscado == Altura_Pareja,
+    Color_Cabello_Buscado == Color_Cabello_Pareja,
+    Edad_Buscado == Edad_Pareja.
+
+buscar_pareja(Nombre, Pareja):-
+    persona(Nombre, Altura, Color_Cabello, Edad),
+    gusta(Nombre, Musica, Literatura, Deportes),
+	gusta(Pareja, Musica, Literatura, Deportes),
+	busca(Nombre, Altura_Buscada, Color_Cabello_Buscado, Edad_Buscada),
+    busca(Pareja, Altura, Color_Cabello, Edad),
+    persona(Pareja, Altura_Pareja, Color_Caballo_Pareja, Edad_Pareja),
+    comparacion_de_busquedas(Altura_Buscada, Altura_Pareja, Color_Cabello_Buscado
+                             Color_Caballo_Pareja, Edad_Buscada, Edad_Pareja).
+

@@ -1,0 +1,16 @@
+Busqueda en Profundidad (DFS) :
+	- Cada vez que se visita un nodo, se marca el nodo como visitado
+	  y se pone en la pila
+	- Luego, se marcan como visitados a los adyacentes del nodo
+	- Y se sacan de la pila los elementos ya visitados
+	( Mirar algun video de YouTube )
+
+
+Busqueda en Anchura (BFS) :
+	- Cada vez que se visita un nodo, se marca el nodo como visitado
+	  y se pone en la cola.
+	- Luego, se marcan como visitados a los adyacentes del nodo
+	- Y se sacan de la cola los elementos ya visitados
+	( Mirar algun video de YouTube )
+
+

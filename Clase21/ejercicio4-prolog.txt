@@ -1,0 +1,34 @@
+%clauses
+transporte(roma,20).
+transporte(londres,30).
+transporte(tunez,10).
+alojamiento(roma,hotel,50).
+alojamiento(roma,hostal,30).
+alojamiento(roma,camping,10).
+alojamiento(londres,hotel,60).
+alojamiento(londres,hostal,40).
+alojamiento(londres,camping,20).
+alojamiento(tunez,hotel,40).
+alojamiento(tunez,hostal,20).
+alojamiento(tunez,camping,5).
+%finclauses
+
+% metodos brindados
+multiplicar(P,X,Y):- P is X*Y.
+sumar(S,X,Y):- S is X+Y.
+menor(X,Y):- X<Y.
+
+% C = Ciudad
+% S = 1 o 2 Semanas
+% H = Hotel
+% P = Precio Total
+viajes(C, S, H, P):-
+    transporte(C, PT),
+	alojamiento(C, H, PH),
+    multiplicar(AUX, S, PH),
+	sumar(P, AUX, PT).
+
+viajeeconomico(C,S,H,P,Pmax):-
+    viajes(C, S, H, P),
+    P =< Pmax.
+    

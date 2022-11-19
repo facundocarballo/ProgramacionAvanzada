@@ -1,0 +1,17 @@
+% Listas
+% [1, 2, 3]. Cabezal: 1 | Cola: [2, 3]
+
+% En el caso de una lista con un solo elemento tendriamos
+% [1]. Cabezal: 1 | Cola: [] (La cola esta vacia)
+
+%% En el caso de una lista vacia
+% []
+
+mostrar_lista([X|Y]):- writeln(X), mostrar_lista(Y).
+
+mostrar_lista([]).
+
+
+mostrar_lista_al_reves([X|Y]):- mostrar_lista_al_reves(Y), writeln(X).
+mostrar_lista_al_reves([]).
+

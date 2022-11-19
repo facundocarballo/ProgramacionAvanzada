@@ -1,0 +1,43 @@
+%recursividad en prolog
+
+restasucesiva(Dividiendo, Divisor, 0, Dividiendo):-
+    Divisor > Dividiendo, !.
+    
+
+restasucesiva(Dividiendo, Divisor, Cociente, Resto):-
+    Divisor =< Dividiendo,
+    Resta is Dividiendo - Divisor,
+    restasucesiva(Resta, Divisor, CocientePrevio, Resto),
+    Cociente is CocientePrevio + 1.
+    
+fibonacci(0,0).
+fibonacci(1,1).
+
+fibonacci(Hasta, Cantidad):-
+    Hasta > 1,
+    A is Hasta-1,
+    B is Hasta-2,
+    fibonacci(A, T1),
+    fibonacci(B, T2),
+    Cantidad is T1+T2.
+    
+fibodelprofe(Valor, Cantidad):- !.
+fibodelprofe(Valor, Cantidad):- !.
+
+fibodelprofe(Valor, Cantidad):-
+    Cantidad1 is Cantidad - 1,
+    Canitdad2 is Cantidad - 2,
+    fibodelprofe(Valor1, Cantidad1),
+    fibodelprofe(Valor2, Canitdad2),
+    Valor is Valor1 + Valor2.
+
+fiboMejorado(1, 1, 2):- !.
+
+fiboMejorado(Valor, Valor1, Cantidad):-
+    Cantidad1 is Cantidad - 1,
+    fiboMejorado(Valor1, Valor2, Cantidad1),
+    Valor is Valor1 + Valor2.
+
+fiboMejorado(Valor, Cantidad):-
+    fiboMejorado(Valor, _, Cantidad).
+

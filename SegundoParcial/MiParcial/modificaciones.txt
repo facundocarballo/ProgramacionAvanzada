@@ -1,0 +1,10 @@
+- Agregamos un .clone en la linea 12 del archivo Main.java
+- Modificacmos el for que se encarga de agregar elementos a "camino" dentro de Main.java (Linea 24 del archivo modificado)
+- Agregamos un atributo a la clase Nodo (num_arista)
+	- Modificacamos el constructor de Nodo
+	- Modificamos cada interaccion con un Nodo
+		- Archivo.java:
+			- Cuando se crean las aristas (Linea 41)
+			- Cuando se crean los nodos (Linea 47)
+		- Grafo.java:
+			- setArista, le agregamos el parametro num_Arista (Linea 40)

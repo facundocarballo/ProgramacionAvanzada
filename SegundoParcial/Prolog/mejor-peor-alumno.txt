@@ -1,0 +1,23 @@
+notas(progra, victor, 10).
+notas(sisop, facu, 8).
+notas(algebra, facu, 6).
+notas(algebra, franco, 2).
+notas(sisop, angel, 8).
+notas(sisop, santi, 7).
+
+mejor_alumno(Nombre, Nota):-
+    notas(_, Nombre, Nota),
+    \+(seleccion(Nota,_)).
+    
+peor_alumno(Nombre, Nota):-
+    notas(_, Nombre, Nota),
+    \+(seleccion_peor_alumno(Nota, _)).
+
+seleccion_peor_alumno(X, Y):-
+    notas(_,_,Y),
+    X > Y.
+
+seleccion(X,Y):-
+    notas(_,_,Y),
+    X < Y.
+

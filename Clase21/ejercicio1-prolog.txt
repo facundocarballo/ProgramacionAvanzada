@@ -1,0 +1,30 @@
+%clausues
+entrada(paella).
+entrada(gazpacho).
+entrada(consomé).
+carne(filete_de_cerdo).
+carne(pollo_asado).
+pescado(trucha).
+pescado(bacalao).
+postre(flan).
+postre(helado).
+postre(pastel).
+%fin clausues
+
+% La coma (,) funciona como un && (AND)
+% El punto y coma (;) funciona como un || (OR)
+
+% 1) a)
+menu_a(X, Y, Z):- entrada(X), (carne(Y); pescado(Y)), postre(Z).
+
+% 1) b)
+menu_b(Entrada, Plato, Postre):- 
+    (  entrada(Entrada), Entrada == consomé ), 
+    (  carne(Plato); pescado(Plato) ), 
+    postre(Postre).
+
+% 1) c)
+menu_c(Entrada, Plato, Postre):-
+    entrada(Entrada),
+    (   carne(Plato); pescado(Plato) ),
+    (   Postre = flan ).

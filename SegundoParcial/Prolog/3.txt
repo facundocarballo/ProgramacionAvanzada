@@ -1,0 +1,46 @@
+%clausulas
+
+hombre(pedro).
+hombre(manuel).
+hombre(arturo).
+mujer(maría).
+padre(pedro, manuel).
+padre(pedro, arturo).
+padre(pedro, maría).
+
+
+%fin clausulas
+
+
+ninio(X, Y):-
+    padre(Y, X).
+
+hijo(X, Y):-
+    hombre(X),
+    ninio(X,Y).
+
+hija(X, Y):-
+    mujer(X),
+    ninio(X, Y).
+
+hermano_o_hermana(X, Y):-
+    padre(EL_PADRE, X),
+    padre(EL_PADRE_AUX, Y),
+    X \= Y,
+    EL_PADRE_AUX == EL_PADRE.
+
+hermano(X, Y):-
+    padre(EL_PADRE, X),
+    padre(EL_PADRE_AUX, Y),
+    hombre(Y),
+    X \= Y,
+    EL_PADRE_AUX == EL_PADRE.
+
+hermana(X, Y):-
+    padre(EL_PADRE, X),
+    padre(EL_PADRE_AUX, Y),
+    mujer(Y),
+    X \= Y,
+    EL_PADRE_AUX == EL_PADRE.
+
+
