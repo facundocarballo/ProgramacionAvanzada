@@ -1,0 +1,15 @@
+Leemos el archivo y vamos armando ciudades.
+Las ciudades contendran:
+	- dos enteros, uno para la temperatura maxima y la otra para la temperatura minima.
+	- un identificador.
+	- un entero que indicara la cantidad de comparaciones que recibio y resulto hostil.
+cuando se llama a la funcion de setTemperaturaMaxima o minima, esa funcion se encarga de evaluar si es correcto cambiarlo o no.
+Estas ciudades las ponemos dentro de una lista.
+Un evaluador se creara al finalizar la lectura, pasandole como parametro esta lista de ciudades.
+
+Este evaluador ejecutara en el main una funcion que buscara por cada ciudad su hostilidad.
+Luego, obtendra el mayor de estos, y devolvera una lista de las ciudades que contienen ese nivel de hostilidad.
+
+Luego mandaremos esta lista de ciudades que tiene el evaluador a la funcion guardarArchivo
+en la cual recorreremos todas las ciudades e imprimiremos su id, y ademas la cantidad de no comparaciones que tuvo esa ciudad.
+

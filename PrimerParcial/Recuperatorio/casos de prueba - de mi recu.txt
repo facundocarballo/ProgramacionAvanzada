@@ -1,0 +1,17 @@
+Caso 00 - Primer caso del enunciado
+
+Caso 01 - Segundo caso del enunciado
+
+Caso 02 - Ningun aventurero mueve la pava
+
+Caso 03 - Todos los movimientos son de un solo desplazamiento
+
+Caso 04 - Todos los movimientos se incrementan de a uno en forma de escalera
+
+Caso 05 - Todos los movimientos se reducen de a uno en forma de escalera
+
+Caso 06 - Todos los movimientos son mayores a la cantidad de aventureros existentes
+
+Caso 07 - Todos los movimientos son menores a la cantidad de aventureros existentes (distintos de cero y uno, porque ya lo probamos)
+
+Caso 08 - Caso de Fatiga (400.000 aventureros y 100.000.000 de movimientos por aventurero)

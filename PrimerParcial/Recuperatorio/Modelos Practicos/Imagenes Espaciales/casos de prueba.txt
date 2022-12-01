@@ -1,0 +1,13 @@
+caso 0 - Caso del enunciado
+
+caso 1 - Todas las letras se repitan solo 4 veces en los archivos a comprimir
+
+caso 2 - Que no existan compresiones "(N3)" en el archivo comprimido, pq no hicieron falta
+
+caso 3 - Que el archivo comprimido tenga siempre alteraciones entre secuencias comprimidas y no comprimidas
+
+caso 4 - Todas las letas se repitan mas de 4 veces en los archivos a comprimir
+
+caso 5 - Que las letras se repitan alternadamente, al estilo de ABABABAB
+
+caso 6 - Caso fatiga (250 letras para los archivos sin comprimir, 250 letras para los archivos comprimidos)

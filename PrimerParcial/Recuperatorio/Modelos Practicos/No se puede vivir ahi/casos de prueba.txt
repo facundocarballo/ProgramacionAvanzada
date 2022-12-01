@@ -1,0 +1,13 @@
+Caso 0 - Enunciado
+
+Caso 1 - Ninguna ciudad sea comparable
+
+Caso 2 - Todas las ciudades sean comparables
+
+Caso 3 - Todas las ciudades sean igual de hostiles
+
+Caso 4 - Que exista solo un lugar de maxima hostilidad
+
+Caso 5 - Que existan varios lugar con misma hostilidad
+
+Caso 6 - Fatiga (200.000 ciudades, 5 estaciones por ciudadd)

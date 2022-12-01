@@ -1,0 +1,14 @@
+Caso 0 - Enunciado.
+
+Caso 1 - Que las palabras se puedan formar en mas de una direccion.
+
+Caso 2 - Palabras capicuas con una unica solucion compartida.
+
+Caso 3 - Que no existan solucion a esas palabras dentro del rapigrama.
+
+Caso 4 - Que todas las palabras tengan una unica solucion
+
+Caso 5 - Que dos palabras a buscar se formen de forma compuesta
+		- Por ejemplo: auto y automatico. dentro de automatico se encuentra auto.
+
+Caso 6 - Caso de Fatiga (Matriz de 100x100, 10.000 palabras a buscar)

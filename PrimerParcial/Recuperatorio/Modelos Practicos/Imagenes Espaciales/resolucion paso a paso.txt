@@ -1,0 +1,11 @@
+Leemos del archivo estos dos Strings
+
+y creamos un objeto Imagenes y les mandamos estos dos Strings
+
+El objeto imagenes tendra dos metodos, uno para comprimir y el otro para descomprimir
+
+la compresion se recorrera cada caracter y se buscara secuencias que repitan mas de 4 veces los mismos caracteres
+
+le descompresion se recorrera la cadana hasta encontrar un parentesis, luego se lee la letra y a continuacion el numero que indicara la cantidad de iteracion que necesita esta misma. Luego de eso se leera otro parentesis (el de cierre) y continuaremos con la lectura.
+
+Finalmente llamaremos a un metodo del Archivo para que se guarden los resultados, pasandole como parametro un objeto tipo Imagen.

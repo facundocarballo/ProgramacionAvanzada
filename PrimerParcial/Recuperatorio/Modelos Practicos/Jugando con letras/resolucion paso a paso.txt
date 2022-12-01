@@ -1,0 +1,11 @@
+Leemos el archivo y armamos una matriz donde cada posicion contendra una letra.
+Luego devolvemos un Rapigrama que recibira una matriz, y un listado de palabras a buscar.
+
+El rapigrama crea un HashMap<String, Character> para poder setear la letra (N O S E) correspondiente para leerla.
+
+El rapigrama tendra una funcion que evaluara cada palabra dentro de su lista, si es posible encontrarla dentro de la matriz.
+Fijandose tanto por izq, por derecha, por arriba y por abajo. Donde primero encuentre la palabra, ahi seteara esa direccion en el mapa.
+
+Luego dentro del main llamamos a la funcion guardarArchivo y le pasamos como parametro este HashMap.
+
+Esta funcion lo recorrera y si cada clave tiene asociado como valor una letra valida (N O S E) la imprimiremos.

@@ -1,0 +1,11 @@
+caso 0 - El del enunciado
+
+caso 1 - Que ningun Colaborador coincida en ninguna respuesta
+
+caso 2 - Que coincidan todas a partir de la segunda respuesta (teniendo en cuenta que se tienen en cuenta las primeras N respuestas coincidentes)
+
+caso 3 - Que existan 2 colaboradores con todas las respuestas coincidentes, pero muchos mas con la mayoria de las respuestas coincidentes menos
+
+caso 4 - Que existan 2 parejas de colaboradores que coinciden en sus respuestas, pero esas son diferentes entre si
+
+caso 5 - fatiga. 

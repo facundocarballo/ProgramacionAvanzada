@@ -1,0 +1,11 @@
+Leemos el archivo y armamos una lista de Colaboradores
+Cada colaborador tendra un char[] donde cada posicion representara la respuesta.
+
+Luego el archivo devolvera un evaluador que contendra una lista de colaboradores.
+
+El evaluador llamara a una funcion que resolvera el problema de la siguiente manera:
+- Recorremos respuesta por respuesta de cada colaborador
+	- se arma un Equipo, y se le asigna su puntaje y las coincidencias
+	- si el puntaje de este equipo es mayor al que existia anteriormente, se reemplaza
+
+- Finalizamos el recorrido obteniedo el equipo con mayor puntaje y las coincidencias.

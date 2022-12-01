@@ -1,0 +1,13 @@
+caso 0 - El del enunciado
+
+caso 1 - Que el texto solamente contega las dos letras que uso el virus.
+
+caso 2 - Que no existan segundas letras acompanadas de las primera. (ejemplo -> acbfafbe) las 'a' y 'b' nunca estan juntas
+
+caso 3 - Que las letras que uso el virus se junten asi ((a,b) -> cabcreabrefabre), es decir nunca la segunda letra esta envuelta por la primera (aba)
+
+caso 4 - Que las letras que uso el virus se junten siempre inversamente (bab)
+
+caso 5 - como el caso 3, pero con ba. Ejemplo  ((a,b) -> cbacrebarefbare)
+
+caso 6 - fatiga (texto de 255 caracteres)

@@ -1,0 +1,13 @@
+Caso 0 - Enunciado
+
+Caso 1 - El carrito comienza en un valle, por lo que deberia quedarse ahi. Ya que no tiene velocidad para subir.
+
+Caso 2 - Un valle se encuentra en x=0, y el usuario se encuentre en una posicion mas avanzada, cosa que en realidad tenga que empezar bajando una cima. (Dirigiendose a un valle)
+
+Caso 3 - La segunda cima a subir es mayor que la primera, no deberia poder subir esa segunda cima.
+
+Caso 4 - Las cimas aparecen ordenadas de mayor a menor, por lo que el carrito deberia llegar hasta el final.
+
+Caso 5 - Todas las cimas tienen la misma altura, no deberia poder subir la segunda cima
+
+Caso 6 - Caso de Fatiga (1 Millon de cimas, 1 Millon de valles, hasta 1 Billon de altura

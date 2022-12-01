@@ -1,0 +1,12 @@
+Se lee el archivo y se crea una Ronda. Que contiene:
+	- Lista de Aventureros (Lista de enteros con su respectivo identificador)
+	- Lista de Desplazamientos (Lista de eneteros con sus respectivos movimientos de la pava)
+	- Lista de Retirados (Lista de enteros que contiene cada uno de los aventureros que logran salirse de la competencia por ver quien sera el que ceba el mate)
+
+Ademas, la ronda contendra un metodo "resolver" que ira recorriendo los desplazamientos que se hacen de los materos.
+En cada iteracion se calculara que posicion debe quitarse de la compentencia por lo que se agregara ese mismo a la lista de aventureros retirados de la competencia.
+Iterara hasta que quede un solo elemento dentro de la lista de aventureros, cuando esto pase, sabremos que ese sera el aventurero que le tocara cebar el mate.
+
+Lo setearemos dentro del atributo "cebador" de la ronda.
+
+Luego, desde el main se llamara a guardarArchivo y se le pasara la ronda como parametro, dentro de esta funcion escribiremos lo pedido por la consigna.

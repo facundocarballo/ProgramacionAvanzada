@@ -1,0 +1,7 @@
+UML
+Excepciones
+Complejidad Computacional
+Metodos de Ordenamiento (6 metodos)
+Monticulo (Cola de Prioridad)
+Programacion Dinamica
+Patrones de Diseno (State, Composite, Adapter) 

@@ -1,0 +1,11 @@
+caso 0 - El del enunciado.
+
+caso 1 - Que no lleguen nombres repetidos
+
+caso 2 - Que todos los nombres sean iguales
+
+caso 3 - Que hayan menos nombres de los que se piden mostrar
+
+caso 4 - Que los nombres a mostrar tengan exactamente igual cantidad de apariciones
+
+caso 5 - Caso de fatiga (400.000 nombres y buscamos los primeros 600)

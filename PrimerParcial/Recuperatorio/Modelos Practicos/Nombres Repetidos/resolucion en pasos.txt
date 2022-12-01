@@ -1,0 +1,8 @@
+Leemos el archivo y mientras armamos una lista de cada nombre que vamos leyendo
+Luego devolvemos una clase que contenga tanto esta lista, como tambien la cantidad de nombres repetidos que queremos buscar
+
+En la clase Evaluador, cuando seteamos la lista, armamos un HashMap<String, Integer> que contenga por cada nombre, la cantidad de apariciones.
+
+Luego, con una funcion de obtener resultado, vamos buscando el mayor de ese mapa, y lo metemos dentro de una lista.
+
+Sacamos a ese mayor de la lista, y volvemos a repetir el proceso hasta llegar a la cantidad que nos pasaron en el archivo.

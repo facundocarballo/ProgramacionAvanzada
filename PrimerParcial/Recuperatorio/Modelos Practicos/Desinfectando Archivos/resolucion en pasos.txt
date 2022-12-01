@@ -1,0 +1,14 @@
+Leemos la cantidad de caracteres que tendra nuestro archivo desinfectado
+
+Armamos un vector de caracteres de ese mismo tamano.
+
+luego leemos los caracteres que utiliza el virus.
+
+luego rellenamos el vector de caracteres con el texto infectado.
+
+la funcion leer archivo devuelve un objeto Antivirus
+
+dentro de Antivirus, existira una funcion que resolvera el problema.
+
+donde cada vez que encuentre la primer letra, debera fijarse si la siguiente es la segunda letra que agregaba el virus.
+de serla, la elimina del vector de caracteres; de no serla la deja.
